@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: poli-arqweb-crudproductos
+  data:
+    mongodb:
+      uri: mongodb+srv://nevelezv:RR6iAa72K4uYPQLB@poliarqaplicacionesweb.9btc395.mongodb.net/?appName=PoliArqAplicacionesWeb
+      database: productdb

@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "0cd444c3-d729-44cf-ab0f-3f0dc3077793",
+		"name": "Poli - Arq Apps Webs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5284018"
+	},
+	"item": [
+		{
+			"name": "Crear producto Correcto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Café molido premium\",\r\n  \"descripcion\": \"Paquete de 500g\",\r\n  \"precio\": 25000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/productos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,50 @@
+# =========================
+# Java / Maven
+# =========================
+target/
+*.class
+*.log
+
+# =========================
+# IntelliJ IDEA
+# =========================
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# Sistema Operativo
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Variables sensibles
+# =========================
+.env
+application-local.yml
+application-dev.yml
+
+# =========================
+# Archivos temporales
+# =========================
+*.swp
+*.tmp
+*.bak
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+
+# =========================
+# MongoDB data
+# =========================
+data/db/
