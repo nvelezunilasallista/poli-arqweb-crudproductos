@@ -1,1 +1,223 @@
-{"collection":{"info":{"_postman_id":"0cd444c3-d729-44cf-ab0f-3f0dc3077793","name":"Poli - Arq Apps Webs","schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json","updatedAt":"2025-11-27T00:09:02.000Z","createdAt":"2025-11-26T23:58:59.000Z","lastUpdatedBy":"5284018","uid":"5284018-0cd444c3-d729-44cf-ab0f-3f0dc3077793"},"item":[{"name":"Crear producto Correcto","id":"6bc9e12d-b068-4b01-b228-caa1b425e302","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"POST","header":[],"body":{"mode":"raw","raw":"{\r\n  \"nombre\": \"Café molido premium\",\r\n  \"descripcion\": \"Paquete de 500g\",\r\n  \"precio\": 25000\r\n}","options":{"raw":{"language":"json"}}},"url":{"raw":"localhost:8080/api/productos","host":["localhost"],"port":"8080","path":["api","productos"]}},"response":[],"uid":"5284018-6bc9e12d-b068-4b01-b228-caa1b425e302"},{"name":"Crear producto Campos Faltantes","id":"e07df799-c345-4698-bc12-09aff974bbd1","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"POST","header":[],"body":{"mode":"raw","raw":"{\r\n  \"descripcion\": \"Paquete de 500g\",\r\n  \"precio\": 25000.0\r\n}","options":{"raw":{"language":"json"}}},"url":{"raw":"localhost:8080/api/productos","host":["localhost"],"port":"8080","path":["api","productos"]}},"response":[],"uid":"5284018-e07df799-c345-4698-bc12-09aff974bbd1"},{"name":"Editar producto Correcto","id":"4f09219e-9663-4307-b43e-af5f7d08eccf","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"PUT","header":[],"body":{"mode":"raw","raw":"{\r\n  \"nombre\": \"Café colombiano molido premium\",\r\n  \"descripcion\": \"Paquete de 1000g\",\r\n  \"precio\": 58000\r\n}","options":{"raw":{"language":"json"}}},"url":{"raw":"localhost:8080/api/productos/692794b7ddf7f55f367c70cf","host":["localhost"],"port":"8080","path":["api","productos","692794b7ddf7f55f367c70cf"]}},"response":[],"uid":"5284018-4f09219e-9663-4307-b43e-af5f7d08eccf"},{"name":"Editar producto Campos Faltantes","id":"a47ecbc3-a02e-40fb-b2a5-c4aa4d5d4b54","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"PUT","header":[],"body":{"mode":"raw","raw":"{\r\n  \"nombre\": \"Café molido premium\",\r\n  \"descripcion\": \"Paquete de 500g\"\r\n}","options":{"raw":{"language":"json"}}},"url":{"raw":"localhost:8080/api/productos/692794b7ddf7f55f367c70cf","host":["localhost"],"port":"8080","path":["api","productos","692794b7ddf7f55f367c70cf"]}},"response":[],"uid":"5284018-a47ecbc3-a02e-40fb-b2a5-c4aa4d5d4b54"},{"name":"Obtener productos","id":"14765e7b-7937-44f8-8e24-505f6ce5d8cb","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[],"url":{"raw":"localhost:8080/api/productos","host":["localhost"],"port":"8080","path":["api","productos"]}},"response":[],"uid":"5284018-14765e7b-7937-44f8-8e24-505f6ce5d8cb"},{"name":"Obtener producto","id":"e7788c3f-6efa-4510-96bf-f5a8bd8c96ce","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[],"url":{"raw":"localhost:8080/api/productos/692794b7ddf7f55f367c70cf","host":["localhost"],"port":"8080","path":["api","productos","692794b7ddf7f55f367c70cf"]}},"response":[],"uid":"5284018-e7788c3f-6efa-4510-96bf-f5a8bd8c96ce"},{"name":"Eliminar producto Copy","id":"81ddeec9-91af-4199-b604-041a0208e26f","protocolProfileBehavior":{"disableBodyPruning":true},"request":{"method":"GET","header":[],"url":{"raw":"localhost:8080/api/productos/692794b7ddf7f55f367c70cf","host":["localhost"],"port":"8080","path":["api","productos","692794b7ddf7f55f367c70cf"]}},"response":[],"uid":"5284018-81ddeec9-91af-4199-b604-041a0208e26f"}]}}
+{
+  "collection": {
+    "info": {
+      "_postman_id": "0cd444c3-d729-44cf-ab0f-3f0dc3077793",
+      "name": "Poli - Arq Apps Webs",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2025-11-27T00:09:02.000Z",
+      "createdAt": "2025-11-26T23:58:59.000Z",
+      "lastUpdatedBy": "5284018",
+      "uid": "5284018-0cd444c3-d729-44cf-ab0f-3f0dc3077793"
+    },
+    "item": [
+      {
+        "name": "Crear producto Correcto",
+        "id": "6bc9e12d-b068-4b01-b228-caa1b425e302",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n  \"nombre\": \"Café molido premium\",\r\n  \"descripcion\": \"Paquete de 500g\",\r\n  \"precio\": 25000\r\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:8080/api/productos",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "api",
+              "productos"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "5284018-6bc9e12d-b068-4b01-b228-caa1b425e302"
+      },
+      {
+        "name": "Crear producto Campos Faltantes",
+        "id": "e07df799-c345-4698-bc12-09aff974bbd1",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n  \"descripcion\": \"Paquete de 500g\",\r\n  \"precio\": 25000.0\r\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:8080/api/productos",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "api",
+              "productos"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "5284018-e07df799-c345-4698-bc12-09aff974bbd1"
+      },
+      {
+        "name": "Editar producto Correcto",
+        "id": "4f09219e-9663-4307-b43e-af5f7d08eccf",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "PUT",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n  \"nombre\": \"Café colombiano molido premium\",\r\n  \"descripcion\": \"Paquete de 1000g\",\r\n  \"precio\": 58000\r\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:8080/api/productos/692794b7ddf7f55f367c70cf",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "api",
+              "productos",
+              "692794b7ddf7f55f367c70cf"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "5284018-4f09219e-9663-4307-b43e-af5f7d08eccf"
+      },
+      {
+        "name": "Editar producto Campos Faltantes",
+        "id": "a47ecbc3-a02e-40fb-b2a5-c4aa4d5d4b54",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "PUT",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n  \"nombre\": \"Café molido premium\",\r\n  \"descripcion\": \"Paquete de 500g\"\r\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:8080/api/productos/692794b7ddf7f55f367c70cf",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "api",
+              "productos",
+              "692794b7ddf7f55f367c70cf"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "5284018-a47ecbc3-a02e-40fb-b2a5-c4aa4d5d4b54"
+      },
+      {
+        "name": "Obtener productos",
+        "id": "14765e7b-7937-44f8-8e24-505f6ce5d8cb",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "localhost:8080/api/productos",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "api",
+              "productos"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "5284018-14765e7b-7937-44f8-8e24-505f6ce5d8cb"
+      },
+      {
+        "name": "Obtener producto",
+        "id": "e7788c3f-6efa-4510-96bf-f5a8bd8c96ce",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "localhost:8080/api/productos/692794b7ddf7f55f367c70cf",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "api",
+              "productos",
+              "692794b7ddf7f55f367c70cf"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "5284018-e7788c3f-6efa-4510-96bf-f5a8bd8c96ce"
+      },
+      {
+        "name": "Eliminar producto Copy",
+        "id": "81ddeec9-91af-4199-b604-041a0208e26f",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "localhost:8080/api/productos/692794b7ddf7f55f367c70cf",
+            "host": [
+              "localhost"
+            ],
+            "port": "8080",
+            "path": [
+              "api",
+              "productos",
+              "692794b7ddf7f55f367c70cf"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "5284018-81ddeec9-91af-4199-b604-041a0208e26f"
+      }
+    ]
+  }
+}
