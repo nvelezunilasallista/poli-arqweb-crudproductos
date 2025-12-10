@@ -194,13 +194,13 @@
         "uid": "5284018-e7788c3f-6efa-4510-96bf-f5a8bd8c96ce"
       },
       {
-        "name": "Eliminar producto Copy",
+        "name": "Eliminar producto",
         "id": "81ddeec9-91af-4199-b604-041a0208e26f",
         "protocolProfileBehavior": {
           "disableBodyPruning": true
         },
         "request": {
-          "method": "GET",
+          "method": "DELETE",
           "header": [],
           "url": {
             "raw": "localhost:8080/api/productos/692794b7ddf7f55f367c70cf",
